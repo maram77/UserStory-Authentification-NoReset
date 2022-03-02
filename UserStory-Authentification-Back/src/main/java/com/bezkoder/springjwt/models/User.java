@@ -32,6 +32,9 @@ public class User {
 	@Size(max = 120)
 	private String password;
 
+
+
+
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(	name = "user_roles", 
 				joinColumns = @JoinColumn(name = "user_id"), 
@@ -86,4 +89,8 @@ public class User {
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
 	}
+
+
+
+
 }
