@@ -14,6 +14,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { RecuperateComponent } from './recuperate/recuperate.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ProfileComponent,
     BoardAdminComponent,
     BoardUserComponent,
-    SidebarComponent
+    SidebarComponent,
+    RecuperateComponent
   ],
   imports: [
     BrowserModule,

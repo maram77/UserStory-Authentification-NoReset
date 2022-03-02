@@ -67,6 +67,14 @@
       </div>
     </form>
 
+    <div class="text-center" *ngIf="!isLoggedIn">
+       <p>Don't have an account? <a href="/register" routerLink="/register">Sign Up</a></p>
+    </div>
+
+    <div class="text-center" *ngIf="!isLoggedIn">
+      <p>Forgot password? <a href="/recuperate" routerLink="/recuperate">Recuperate</a></p>
+   </div>
+
     <div class="alert alert-success" *ngIf="isLoggedIn">
       Logged in as {{ roles }}.
     </div>
